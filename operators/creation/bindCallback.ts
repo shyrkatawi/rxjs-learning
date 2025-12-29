@@ -29,7 +29,7 @@ const logFactory = (schedulerType?: SchedulerType) => {
     queue: queueScheduler,
   } as const;
 
-  return bindCallback(logFn, undefined, schedulers[schedulerType]);
+  return bindCallback(logFn, () => {}, schedulerType ? schedulers[schedulerType] : undefined);
 };
 
 const asapLog = logFactory("asap");
