@@ -1,7 +1,7 @@
 import { EMPTY, Observable } from "rxjs";
 import { observeToConsole } from "../../utils/observe-to-console";
 
-const myRange = (start: number, count: number = 0): Observable<number> => {
+const myRange = (start: number, count = 0): Observable<number> => {
   if (count <= 0) {
     return EMPTY;
   }

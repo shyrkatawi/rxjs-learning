@@ -2,7 +2,7 @@ import { Observable, take } from "rxjs";
 import { observeToConsole } from "../../utils/observe-to-console";
 import { clearInterval } from "node:timers";
 
-const myInterval = (period: number = 0): Observable<number> => {
+const myInterval = (period = 0): Observable<number> => {
   if (period < 0) {
     period = 0;
   }
