@@ -6,3 +6,6 @@ button, input {
   border: 1px solid black;
 }
 
+button:hover {
+  cursor: pointer;
+}
