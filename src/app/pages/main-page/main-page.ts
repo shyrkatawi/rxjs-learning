@@ -1,9 +1,9 @@
 import { Component } from "@angular/core";
-import { PageVisibilityExample } from "../../../../rxjs-challenges/02-page-visibility/page-visibility-example";
+import { ShowErrorMessage } from "../../../../rxjs-challenges/03-show-error-message/show-error-message";
 
 @Component({
   selector: "app-main-page",
-  imports: [PageVisibilityExample],
+  imports: [ShowErrorMessage],
   templateUrl: "./main-page.html",
   styleUrl: "./main-page.css",
 })

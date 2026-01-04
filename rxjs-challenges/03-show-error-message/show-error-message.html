@@ -1,0 +1,22 @@
+<div class="w-2xs flex flex-col gap-4 p-4">
+  <div>Status: {{ status() }}</div>
+  @if (username()) {
+    <div class="border-2 border-solid border-green-500">
+      {{ username() }}
+    </div>
+  } @else if (error()) {
+    <div class="border-2 border-solid border-red-600">
+      {{ error() }}
+    </div>
+  } @else {
+    <div class="border-2 border-solid border-yellow-300">
+      Placeholder message :D
+    </div>
+  }
+  <p>
+    <button
+      class="hover:cursor-pointer disabled:hover:cursor-not-allowed disabled:text-gray-400"
+      [disabled]="status() === 'pending' || isButtonDisabledAfterError()" (click)="handleClick()">Submit
+    </button>
+  </p>
+</div>
