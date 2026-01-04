@@ -1,9 +1,9 @@
 import { Component } from "@angular/core";
-import { TrackFocusExample } from "../../../../rxjs-challenges/01-track-focus/track-focus-example";
+import { PageVisibilityExample } from "../../../../rxjs-challenges/02-page-visibility/page-visibility-example";
 
 @Component({
   selector: "app-main-page",
-  imports: [TrackFocusExample],
+  imports: [PageVisibilityExample],
   templateUrl: "./main-page.html",
   styleUrl: "./main-page.css",
 })
