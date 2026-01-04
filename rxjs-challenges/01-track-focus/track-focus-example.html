@@ -1,0 +1,14 @@
+<div class="flex flex-col gap-4 p-4">
+  <h1>Track focus example</h1>
+  <div>Focused element: {{focusedElement()?.tagName ?? 'null'}}</div>
+  <div class="flex flex-col gap-2 w-40" (appTrackFocus)="onFocusChange($event)">
+    <input type="text" placeholder="Input 1" />
+    <button>button 1</button>
+    <input type="text" placeholder="Input 2" />
+    <button>button 2</button>
+  </div>
+  <div class="flex flex-col gap-2 w-40">
+    <input type="text" placeholder="Input 3" />
+    <button>button 3</button>
+  </div>
+</div>
