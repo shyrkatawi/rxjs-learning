@@ -1,0 +1,7 @@
+<div class="flex flex-col p-4 gap-4 w-40">
+  @if (countdown()) {
+    <div>resend code in: {{ countdown() }}</div>
+  } @else {
+    <button class="p-1" (click)="handleButtonClick()">resend code</button>
+  }
+</div>

@@ -1,9 +1,9 @@
 import { Component } from "@angular/core";
-import { LoadingStatusBar } from "../../../../rxjs-challenges/04-loading-status-bar/loading-status-bar";
+import { CountdownWithRestart } from "../../../../rxjs-challenges/05-countdown-with-restart/countdown-with-restart";
 
 @Component({
   selector: "app-main-page",
-  imports: [LoadingStatusBar],
+  imports: [CountdownWithRestart],
   templateUrl: "./main-page.html",
   styleUrl: "./main-page.css",
 })
