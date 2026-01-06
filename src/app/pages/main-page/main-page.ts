@@ -1,9 +1,9 @@
 import { Component } from "@angular/core";
-import { StickyHeaderExample } from "../../../../rxjs-challenges/07-sticky-header/sticky-header-example";
+import { SmartSearch } from "../../../../rxjs-challenges/08-smart-search/smart-search";
 
 @Component({
   selector: "app-main-page",
-  imports: [StickyHeaderExample],
+  imports: [SmartSearch],
   templateUrl: "./main-page.html",
   styleUrl: "./main-page.css",
 })

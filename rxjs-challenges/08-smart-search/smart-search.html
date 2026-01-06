@@ -1,0 +1,8 @@
+<input [formControl]="control" />
+
+<h3>Items:</h3>
+@for (item of (items$ | async); track item) {
+  <p>{{item}}</p>
+} @empty {
+  <div>no items found</div>
+}
