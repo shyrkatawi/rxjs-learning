@@ -30,7 +30,6 @@ const generateSeats = (number: number): SeatInfo[] => {
   selector: "app-picking-cinema-seats",
   imports: [NgClass],
   templateUrl: "./picking-cinema-seats.html",
-  styleUrl: "./picking-cinema-seats.css",
 })
 export class PickingCinemaSeats {
   protected readonly SeatStatus = SeatStatus;

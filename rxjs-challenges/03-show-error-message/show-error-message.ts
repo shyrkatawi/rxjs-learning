@@ -5,7 +5,6 @@ import { ShowErrorMessageService } from "./show-error-message.service";
   selector: "app-show-error-message",
   imports: [],
   templateUrl: "./show-error-message.html",
-  styleUrl: "./show-error-message.css",
 })
 export class ShowErrorMessage {
   private readonly showErrorMessageService = inject(ShowErrorMessageService);
@@ -18,7 +17,7 @@ export class ShowErrorMessage {
 
   constructor() {
     effect((onCleanup) => {
-      let timeoutId: number;
+      let timeoutId: ReturnType<typeof setTimeout>;
       if (this.status() === "error") {
         this.isButtonDisabledAfterError.set(true);
         timeoutId = setTimeout(() => {

@@ -1,9 +1,9 @@
 import { Component } from "@angular/core";
-import { PickingCinemaSeats } from "../../../../rxjs-challenges/06-picking-cinema-seats/picking-cinema-seats";
+import { StickyHeaderExample } from "../../../../rxjs-challenges/07-sticky-header/sticky-header-example";
 
 @Component({
   selector: "app-main-page",
-  imports: [PickingCinemaSeats],
+  imports: [StickyHeaderExample],
   templateUrl: "./main-page.html",
   styleUrl: "./main-page.css",
 })

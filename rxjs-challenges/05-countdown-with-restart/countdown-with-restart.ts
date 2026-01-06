@@ -6,7 +6,6 @@ import { takeUntilDestroyed } from "@angular/core/rxjs-interop";
   selector: "app-countdown-with-restart",
   imports: [],
   templateUrl: "./countdown-with-restart.html",
-  styleUrl: "./countdown-with-restart.css",
 })
 export class CountdownWithRestart {
   private readonly duration = 5;

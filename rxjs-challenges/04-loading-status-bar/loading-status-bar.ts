@@ -6,7 +6,6 @@ import { Subject, takeUntil, tap } from "rxjs";
   selector: "app-loading-status-bar",
   imports: [],
   templateUrl: "./loading-status-bar.html",
-  styleUrl: "./loading-status-bar.css",
 })
 export class LoadingStatusBar implements OnDestroy {
   private readonly loadingService = inject(FakeLoadingService);
