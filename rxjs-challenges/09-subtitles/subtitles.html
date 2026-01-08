@@ -1,0 +1,6 @@
+<div>
+  @if (subtitles$ | async; as subtitles) {
+    <div>{{ subtitles[0]?.text }}</div>
+    <div>{{ subtitles[1]?.text }}</div>
+  }
+</div>
