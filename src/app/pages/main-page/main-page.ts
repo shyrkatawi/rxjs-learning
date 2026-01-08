@@ -1,9 +1,9 @@
 import { Component } from "@angular/core";
-import { Subtitles } from "../../../../rxjs-challenges/09-subtitles/subtitles";
+import { FpsMeter } from "../../../../rxjs-challenges/19-fps-meter/fps-meter";
 
 @Component({
   selector: "app-main-page",
-  imports: [Subtitles],
+  imports: [FpsMeter],
   templateUrl: "./main-page.html",
   styleUrl: "./main-page.css",
 })
